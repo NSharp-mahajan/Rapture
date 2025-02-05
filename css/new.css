@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    font-family:sans-serif;
+    background-color: #4b2db3;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid white;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+a{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.cta {
+    background-color: #ff7f50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+.hero div{
+    margin: 80px;
+}
+.h1{
+    line-height: 1.7;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: #ff7f50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.games {
+    text-align: center;
+    margin: 3rem 2rem;
+}
+
+.games h2 {
+    font-size: 2rem;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.game-card {
+    background-color: #312080;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.game-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.game-card p {
+    margin: 0.5rem 0;
+}
+
+.no-specs {
+background-color: #4e2db5;
+color: white;
+padding: 4rem 2rem;
+text-align: center;
+}
+
+.no-specs-content img {
+margin-top: 1.5rem;
+max-width: 100%;
+border-radius: 1rem;
+}
+
+.connect-friends {
+background-image: url(https://i.pinimg.com/736x/05/4f/10/054f1019ca6f1bd87155aeb9e481be97.jpg);
+background-size: cover;
+background-position: center;
+color: white;
+text-align: center;
+padding: 4rem 2rem;
+}
+
+.connect-friends h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+}
+
+.connect-friends p {
+margin-bottom: 2rem;
+}
+
+.friends-grid {
+display: flex; /* Use flexbox instead of grid */
+flex-wrap: wrap; /* Allow wrapping to new lines */
+justify-content: center; /* Center the boxes horizontally */
+gap: 1.5rem; /* Keep the gap */
+}
+
+.friend {
+width: calc(33.33% - 1.5rem); /* Each box takes 1/3 of the container width minus the gap */
+box-sizing: border-box; /* Include padding and border in width calculation */
+/* ... (Existing styles) ... */
+/* padding: 200px; */
+height: 130px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 900px) { /* Adjust breakpoint as needed */
+.friend {
+width: calc(50% - 1.5rem); /* Two boxes per row on medium screens */
+}
+}
+
+@media (max-width: 600px) { /* Adjust breakpoint as needed */
+.friend {
+width: 100%; /* One box per row on small screens */
+}
+}
+
+.friend {
+background-color: rgba(0, 0, 0, 0.5);
+padding: 1rem;
+border-radius: 10px;
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+.friend:hover {
+transform: scale(1.1);
+}
+
+.friend img {
+width: 50px;
+height: 50px;
+margin-bottom: 1rem;
+border-radius: 50%;
+}
+
+.friend p {
+font-weight: bold;
+margin: 0.5rem 0;
+}
+
+.friend span {
+font-size: 0.9rem;
+margin-top: 40px;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Image Box */
+.box {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.cur{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* Supported Devices Section */
+.supported-devices {
+    background-color: #402F89;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.supported-devices h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #1D1B1B;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.newsletter-content {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.newsletter h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newsletter p {
+    font-size: 14px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+.newsletter-form button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-logo h3, .footer-links h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.hero{
+    display: flex;
+}
+
+.newsletters {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
